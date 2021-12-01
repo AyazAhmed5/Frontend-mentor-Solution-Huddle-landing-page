@@ -67,11 +67,13 @@ body{
 }
 
 
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 786px) and (min-width: 300px) {
 
     body{
         text-align: center;
-         background-image: url("/images/bg-mobile.svg");
+        background-image: url("/images/bg-mobile.svg");
+         background-repeat: no-repeat;
+          background-size: cover
 }
 
   .attribution{ 
@@ -86,18 +88,21 @@ body{
 .para{
     width: 74%;
     color: white;
+
 }
 .mockups{
-    margin-left: 20px;
-    margin-right: auto;
-    margin-bottom: 30px;
-        width: 325px;
+    margin-left: 0;
+    margin-right: 0;
+   float: none;
+    width: 325px;
     height: 241px;
+    display: inline-block;
+   
 }
 .logo{
     padding: 0;
     height: 45px;
-    margin-left: 15px;
+      margin-left: initial;
     display: block;
 }
 .btn{
