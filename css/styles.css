@@ -1,25 +1,29 @@
 body{
- background-image: url("../images/bg-desktop.svg");
- background-color: hsl(257, 40%, 49%);
+  background: #674baf url("/images/bg-desktop.svg");
  font-family: 'Poppins', sans-serif;
 }
+
 .btn{
-    display: block;
-      border-radius: 20px;
-    width: 128px;
+   display: block;
+    border-radius: 70px;
+    width: 187px;
     padding: 14px 40px;
 }
+
 .container{
     margin-top: 50px;
+    
 }
 
 .btn:hover {
   background-color: pink; 
+  cursor: pointer;
   color: white;
 }
 .btn-txt{
     color: hsl(257, 40%, 49%);
    font-family: 'Poppins', sans-serif;
+   font-weight: 500;
 }
 .footer{
     position: absolute;
@@ -32,6 +36,7 @@ body{
     margin-top: 35px;
     font-size: 40px;
     color: white;
+        font-weight: bold;
 }
 .para{
     display: inline-block;
@@ -45,6 +50,7 @@ body{
     margin-left: 50px;
      padding: 10px;
     display: block;
+        font-weight: bold;
 }
 .mockups{
     margin-left: 50px;
@@ -52,18 +58,27 @@ body{
     float: left;
 }
 .attribution{
+    display: flex;
+    list-style: none;
+    justify-content: end;
     clear: both;
-    text-align: end;
     margin-right: 70px;
-
 }
+
 .icons{
+    border: 1px solid #ffffff;
+    border-radius: 50%;
     color: white;
-    size: 3x;
-    padding: 9px;
+    width: 40px;
+    height: 40px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+     margin-inline: 7px;
 }
 .icons:hover{
     color: pink;
+    cursor: pointer;
 }
 
 
@@ -73,7 +88,11 @@ body{
         text-align: center;
         background-image: url("../images/bg-mobile.svg");
          background-repeat: no-repeat;
-          background-size: cover
+          background-size: center/cover;
+}
+.container{
+    margin-top: 50px;
+    text-align: center;
 }
 
   .attribution{ 
@@ -89,6 +108,17 @@ body{
     width: 74%;
     color: white;
 
+}
+ .attribution{ 
+     display: flex;
+    list-style: none;
+    justify-content: center;
+}
+.icons{
+    width: 11px;
+    height: 11px;
+    color:white;
+    padding: 9px;
 }
 .mockups{
     margin-left: 0;
